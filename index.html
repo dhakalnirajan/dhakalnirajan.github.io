@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Language" content="en" />
 
@@ -15,67 +14,154 @@
       name="keywords"
       content="Artificial Intelligence, Machine Learning, Quantum Computing, Citizen Astronomer" />
     <meta name="keywords" content="quantum computing, citizen astronomer" />
-
-    <script
-      src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js"
-      crossorigin="anonymous"></script>
-
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Nirajan Dhakal" />
-    <meta
-      name="twitter:description"
-      content="Nirajan Dhakal personal website" />
-
-    <meta property="og:title" content="Nirajan Dhakal" />
-    <meta property="og:description" content="Nirajan Dhakal personal website" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://dhakalnirajan.github.io/" />
-
-    <base href="https://dhakalnirajan.github.io/" />
     <title>Nirajan Dhakal | Personal Website</title>
 
-    <link rel="canonical" href="https://dhakalnirajan.github.io/" />
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
-      rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Courier+New&display=swap"
-      rel="stylesheet" />
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous">
 
+    <!-- Include Google Fonts for custom fonts -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudfare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha256-1850mP0jvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
-      crossorigin="anonymous" />
-    <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@400&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/theme.js"></script>
   </head>
-  <body>
-    <div class="v2_26">
-      <div class="v4_87">
-        <div class="v4_88"></div>
-        <div class="v4_91"></div>
-        <div class="v4_94"></div>
-        <div class="v4_95"></div>
-        <div class="v4_99"></div>
+  <body class="light-theme"> <!-- Default is light theme -->
+
+    <!-- Navigation Bar (Enhanced Tailwind Navbar) -->
+    <nav class="bg-black bg-dark-theme p-4 navbar">
+      <div class="container mx-auto flex justify-between items-center">
+        <a
+          class="text-light-theme fs-1 fw-bold text-5xl font-semibold nav-hover ml-4"
+          href="#">NIRAJAN DHAKAL</a>
+
+        <!-- Move 50 pixels to the left -->
+        <div class="space-x-4 ml-4">
+          <a
+            class="relative group inline-block text-light-theme nav-hover"
+            href="./html/about.html">
+            <span>About</span>
+            <!-- Added a horizontal line that appears on hover -->
+            <span
+              class="absolute left-0 w-full h-1 bottom-0 bg-light-theme transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+          </a>
+          <a
+            class="relative group inline-block text-light-theme nav-hover"
+            href="./html/projects.html">
+            <span>Projects</span>
+            <span
+              class="absolute left-0 w-full h-1 bottom-0 bg-light-theme transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+          </a>
+          <a
+            class="relative group inline-block text-light-theme nav-hover"
+            href="./html/publications.html">
+            <span>Publications</span>
+            <span
+              class="absolute left-0 w-full h-1 bottom-0 bg-light-theme transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+          </a>
+          <a
+            class="relative group inline-block text-light-theme nav-hover"
+            href="./html/blog.html">
+            <span>Blog</span>
+            <span
+              class="absolute left-0 w-full h-1 bottom-0 bg-light-theme transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+          </a>
+          <a
+            class="relative group inline-block text-light-theme nav-hover"
+            href="./html/contact.html">
+            <span>Contact Me</span>
+            <span
+              class="absolute left-0 w-full h-1 bottom-0 bg-light-theme transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+          </a>
+        </div>
+        <!-- Toggle Theme button in the navbar -->
+        <button id="toggle-theme" class="custom-button"
+          aria-label="Toggle Light/Dark Theme">
+          <i class="fas fa-adjust"></i>
+        </button>
       </div>
-      <div class="v4_63"></div>
-      <span class="v8_23">Hi! I am Nirajan Dhakal. Welcome to my portfolio.
-      </span>
-      <span class="v8_19">Machine Learning | Quantum Computing | Citizen
-        Astronomer</span>
-      <span class="v19_70">Logo here</span>
-      <span class="footer-text">Powered by GitHub (c) 202 by Nirajan Dhakal</span>
-      <div class="name"></div>
-      <div class="navbar">
-        <span class="v8_27">Contact Me</span>
-        <span class="v8_26">Blog</span>
-        <span class="v8_24">About</span>
-        <span class="v8_18">Publications</span>
-        <span class="v8_20">NIRAJAN DHAKAL</span>
+    </nav>
+
+    <!-- Portfolio Section -->
+    <section class="py-10 bg-dark-theme text-light-theme portfolio-section">
+      <div class="container mx-auto">
+        <div class="portfolio-content">
+          <div class="user-profile">
+            <div class="portfolio-image">
+              <img src="./img/picture.jpg" class="avatar-image img-fluid"
+                alt="Portfolio Image">
+            </div>
+            <br><br><br>
+            <div class="portfolio-description">
+              <h3 class="text-4xl fs-1 font-semibold larger-text">Hi!
+                I am Nirajan Dhakal. <br><br> Welcome to my
+                portfolio.</h3>
+              <br><br>
+              <p class="mt-4 text-lg fs-1 font-body medium-text">Machine
+                Learning | Quantum Computing | Citizen
+                Astronomer</p>
+            </div>
+            <div class="portfolio-logo">
+              <a
+                href="https://www.linkedin.com/in/your-linkedin-profile"
+                target="_blank" rel="noopener noreferrer">
+                <div class="social-icon">
+                  <img src="./img/linkedin-logo.png"
+                    alt="LinkedIn Logo">
+                </div>
+              </a>
+              <a href="mailto:your.email@example.com">
+                <div class="social-icon">
+                  <img src="./img/gmail-logo.png" alt="Email Logo">
+                </div>
+              </a>
+              <a href="https://twitter.com/your-twitter-profile"
+                target="_blank" rel="noopener noreferrer">
+                <div class="social-icon">
+                  <img src="./img/twitter-logo.png"
+                    alt="Twitter Logo">
+                </div>
+              </a>
+              <a href="https://github.com/your-github-profile"
+                target="_blank" rel="noopener noreferrer">
+                <div class="social-icon">
+                  <img src="./img/github-logo.png" alt="GitHub Logo">
+                </div>
+              </a>
+              <a
+                href="https://developers.google.com/profile/your-google-profile"
+                target="_blank" rel="noopener noreferrer">
+                <div class="social-icon">
+                  <img src="./img/gdev-logo.png" alt="Google Developers Logo">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-4 bg-dark-theme">
+      <div class="container mx-auto">
+        <p style="color: #fefefe;">&copy; 2023 Your Name. All rights
+          reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous">
+    </script>
+
   </body>
 </html>

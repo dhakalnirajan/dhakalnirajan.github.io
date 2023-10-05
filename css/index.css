@@ -1,263 +1,127 @@
-* {
+/* Common styles */
+body {
+  font-family: 'Poppins', 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-size: 14px;
+/* Light theme */
+.light-theme {
+  background: linear-gradient(to bottom, #f9f9f9, #f9eded);
+  color: #111014;
+  transition: background-color 0.5s ease-in, color 0.5s ease-out;
 }
 
-.v2_26 {
-  width: 100%;
-  height: 1024px;
-  background: rgba(17, 16, 20, 1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
+/* Dark theme */
+.dark-theme {
+  background: linear-gradient(45deg, #111014, #190a19);
+  color: #fefefe;
+  transition: background-color 0.5s ease, color 0.5 ease;
 }
 
-.v4_87 {
-  width: 535px;
-  height: 75px;
-  background: url("../images/v4_87.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 745px;
-  left: 452px;
-  overflow: hidden;
+.nav-hover {
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-.v4_88 {
-  width: 75px;
-  height: 72px;
-  background: rgba(231, 231, 231, 1);
-  opacity: 1;
-  position: absolute;
-  top: 3px;
-  left: 0px;
+.nav-hover:hover {
+  color: #962a4a;
 }
 
-.v4_91 {
-  width: 75px;
-  height: 72px;
-  background: url("../images/v4_91.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 3px;
-  left: 115px;
-  overflow: hidden;
-}
-
-.v4_94 {
-  width: 75px;
-  height: 72px;
-  background: rgba(29, 155, 240, 1);
-  opacity: 1;
-  position: absolute;
-  top: 3px;
-  left: 230px;
-}
-
-.v4_95 {
-  width: 75px;
-  height: 72px;
-  background: url("../images/v4_95.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 3px;
-  left: 345px;
-  overflow: hidden;
-}
-
-.v4_99 {
-  width: 75px;
-  height: 75px;
-  background: url("../images/v4_99.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 460px;
-  overflow: hidden;
-}
-
-.v4_63 {
-  width: 200px;
-  height: 200px;
-  background: url("../images/v4_63.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 128px;
-  left: 620px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  overflow: hidden;
-}
-
-.v8_23 {
-  width: 512px;
-  color: rgba(217, 217, 217, 1);
-  position: absolute;
-  top: 381px;
-  left: 486px;
-  font-family: Poppins;
-  font-weight: SemiBold;
-  font-size: 36px;
-  opacity: 1;
+/* Section styles */
+.section {
+  padding: 50px 0;
   text-align: center;
 }
 
-.v8_19 {
-  width: 660px;
-  color: rgba(217, 217, 217, 1);
-  position: absolute;
-  top: 553px;
-  left: 390px;
-  font-family: Poppins;
-  font-weight: Regular;
-  font-size: 36px;
-  opacity: 1;
-  text-align: center;
+.avatar-image {
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
-.v19_70 {
-  width: 128px;
-  color: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 169px;
-  left: 775px;
-  font-family: Poppins;
-  font-weight: Regular;
-  font-size: 25px;
-  opacity: 1;
-  text-align: left;
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
-.footer-text {
-  width: 100%;
-  color: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 974px;
-  left: 190px;
-  font-family: Courier New;
-  font-weight: Regular;
+.custom-button {
+  background-color: #111014;
+  color: #fefefe;
+  border: none;
+  padding: 10px 20px;
   font-size: 18px;
-  opacity: 1;
-  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
 }
 
-.name {
-  color: #ffffff;
+.custom-button:hover {
+  background-color: #111214;
 }
 
+/* Custom font styles */
+.font-body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+/* Navbar styles */
 .navbar {
-  width: 100%;
-  height: 89px;
-  background: url("../images/v4_69.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 14px;
-  left: 40px;
-  overflow: hidden;
+  background-color: #100f13;
+  /* Updated to match the theme */
+  color: #fefefe;
+  padding: 20px 0;
 }
 
-.v8_27 {
-  width: 132px;
-  color: rgba(217, 217, 217, 1);
-  position: absolute;
-  top: 32px;
-  left: 1228px;
-  font-family: Poppins;
-  font-weight: Regular;
-  font-size: 22px;
-  opacity: 1;
-  text-align: left;
+.navbar a {
+  color: #fefefe;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  transition: color 0.5s ease;
 }
 
-.v8_26 {
-  width: 50px;
-  color: rgba(217, 217, 217, 1);
-  position: absolute;
-  top: 32px;
-  left: 1123px;
-  font-family: Poppins;
-  font-weight: Regular;
-  font-size: 22px;
-  opacity: 1;
-  text-align: left;
+.navbar a:hover {
+  color: #dd3e6e;
+  font-size: 19px;
 }
 
-.v8_24 {
-  width: 68px;
-  color: rgba(217, 217, 217, 1);
-  position: absolute;
-  top: 32px;
-  left: 807px;
-  font-family: Poppins;
-  font-weight: Regular;
-  font-size: 22px;
-  opacity: 1;
-  text-align: left;
+.portfolio-section {
+  padding: 50px 0;
 }
 
-.v8_18 {
-  width: 138px;
-  color: rgba(217, 217, 217, 1);
-  position: absolute;
-  top: 32px;
-  left: 930px;
-  font-family: Poppins;
-  font-weight: Regular;
-  font-size: 22px;
-  opacity: 1;
-  text-align: left;
+.portfolio-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.v8_20 {
-  width: 524px;
-  color: rgba(217, 217, 217, 1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  font-family: Poppins;
-  font-weight: Bold;
-  font-size: 59px;
-  opacity: 1;
-  text-align: left;
+/* Center align footer text */
+footer {
+  text-align: center;
+  background-color: #100f13;
 }
 
-@media screen and (max-width: 600px) {
-
-  .footer-text,
-  .name,
-  .navbar,
-  .v19_70,
-  .v2_26,
-  .v4_63,
-  .v4_87,
-  .v4_88,
-  .v4_91,
-  {
-  width: 100%;
+/* Styling for social icons */
+.social-icon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 25%;
+  text-align: center;
+  line-height: 50px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
 }
+
+.social-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+.social-icon:hover {
+  background-color: #ff9dbb;
 }
