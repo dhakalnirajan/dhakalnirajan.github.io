@@ -1,31 +1,9 @@
 /* Common styles */
 body {
-  font-family: 'Poppins', 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* Default styles for all screen sizes */
-.light-theme {
-  background: linear-gradient(to bottom, #f9f9f9, #f9eded);
-  color: #111014;
-  transition: background-color 0.5s ease-in, color 0.5s ease-out;
-}
-
-.dark-theme {
-  background: linear-gradient(45deg, #111014, #190a19);
-  color: #fefefe;
-  transition: background-color 0.5s ease, color 0.5 ease;
-}
-
-.nav-hover {
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.nav-hover:hover {
-  color: #962a4a;
 }
 
 .section {
@@ -35,8 +13,9 @@ body {
 
 .avatar-image {
   border-radius: 100%;
-  max-width: 100%;
-  height: auto;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
 }
 
 .img-fluid {
@@ -44,6 +23,7 @@ body {
   height: auto;
 }
 
+/* Custom button style */
 .custom-button {
   background-color: #111014;
   color: #fefefe;
@@ -58,29 +38,9 @@ body {
   background-color: #111214;
 }
 
+/* Custom font styles */
 .font-body {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-}
-
-/* Navbar styles */
-.navbar {
-  background-color: #100f13;
-  color: #fefefe;
-  padding: 20px 0;
-}
-
-.navbar a {
-  color: #fefefe;
-  text-decoration: none;
-  margin: 0 20px;
-  font-size: 18px;
-  transition: color 0.5s ease;
-}
-
-.navbar a:hover {
-  color: #dd3e6e;
-  font-size: 19px;
 }
 
 .portfolio-section {
@@ -93,6 +53,7 @@ body {
   text-align: center;
 }
 
+/* Center align footer text */
 footer {
   text-align: center;
   background-color: #100f13;
@@ -101,9 +62,10 @@ footer {
 /* Styling for social icons */
 .social-icon {
   display: inline-block;
-  width: 70px;
-  height: 70px;
-  border-radius: 25%;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
   text-align: center;
   line-height: 50px;
   margin: 10px;
@@ -117,7 +79,7 @@ footer {
 }
 
 .social-icon:hover {
-  background-color: #ff9dbb;
+  background-color: #dd3e6e;
 }
 
 /* Responsive styles for different screen sizes */

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Navbar styles */
+.navbar {
+    background-color: #100f13;
+    color: #fefefe;
+    padding: 20px 0;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.nav-hover {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-hover:hover {
+    color: #dd3e6e;
+}
+
+.navbar a {
+    color: #fefefe;
+    text-decoration: none;
+    margin: 10px 20px;
+    font-size: 18px;
+    transition: color 0.7s ease;
+    position: relative;
+}
+
+.navbar a:hover {
+    color: #dd3e6e;
+    font-size: 18px;
+}
+
+.navbar a::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #dc6464;
+    position: absolute;
+    bottom: -4px;
+    left: -5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar a:hover::before {
+    width: 108%;
+}
