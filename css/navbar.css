@@ -10,7 +10,8 @@
 
 .nav-hover {
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
+    font-weight: bolder !important;
 }
 
 .nav-hover:hover {
@@ -21,14 +22,14 @@
     color: #fefefe;
     text-decoration: none;
     margin: 10px 20px;
-    font-size: 18px;
-    transition: color 0.7s ease;
+    transition: color 0.7s ease-in-out;
     position: relative;
+    font-weight: 700 !important;
 }
 
 .navbar a:hover {
     color: #dd3e6e;
-    font-size: 18px;
+
 }
 
 .navbar a::before {
@@ -39,7 +40,7 @@
     position: absolute;
     bottom: -4px;
     left: -5px;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.5s ease-in-out;
 }
 
 .navbar a:hover::before {
