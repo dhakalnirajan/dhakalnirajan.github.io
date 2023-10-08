@@ -1,149 +1,149 @@
 /* Common styles */
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .section {
-  padding: 50px 0;
-  text-align: center;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .avatar-image {
-  border-radius: 100%;
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Custom button style */
 .custom-button {
-  background-color: #111014;
-  color: #fefefe;
-  border: none;
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.5s ease;
+    background-color: #111014;
+    color: #fefefe;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
 }
 
 .custom-button:hover {
-  background-color: #111214;
+    background-color: #111214;
 }
 
 /* Custom font styles */
 .font-body {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .portfolio-section {
-  padding: 50px 0;
+    padding: 50px 0;
 }
 
 .portfolio-content {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* Center align footer text */
 footer {
-  text-align: center;
-  background-color: #100f13;
+    text-align: center;
+    background-color: #100f13;
 }
 
 /* Styling for social icons */
 .social-icon {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 50px;
-  margin: 20px;
-  transition: background-color 0.3s ease;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 75%;
+    text-align: center;
+    line-height: 10px;
+    margin: 10px;
+    transition: background-color 0.75s ease;
 }
 
 .social-icon img {
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
 }
 
 .social-icon:hover {
-  background-color: #8eb5e1;
+    background-color: #c1a156;
 }
 
-s
+
 /* Responsive styles for different screen sizes */
 @media screen and (max-width: 320px) {
 
-  /* iPhone portrait */
-  .avatar-image {
-    width: 150px;
-    height: 150px;
-  }
+    /* iPhone portrait */
+    .avatar-image {
+        width: 150px;
+        height: 150px;
+    }
 
-  .custom-button {
-    font-size: 16px;
-  }
+    .custom-button {
+        font-size: 16px;
+    }
 
-  .social-icon {
-    width: 40px;
-    height: 40px;
-    line-height: 30px;
-  }
+    .social-icon {
+        width: 50px;
+        height: 50px;
+        line-height: 10px;
+    }
 }
 
 @media screen and (min-width: 321px) and (max-width: 414px) {
 
-  /* iPhone landscape, MI, Samsung, etc. */
-  .avatar-image {
-    width: 200px;
-    height: 200px;
-  }
+    /* iPhone landscape, MI, Samsung, etc. */
+    .avatar-image {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media screen and (min-width: 415px) and (max-width: 768px) {
 
-  /* Tablets */
-  .avatar-image {
-    width: 250px;
-    height: 250px;
-  }
+    /* Tablets */
+    .avatar-image {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
 
-  /* Smaller laptops and large screens */
-  .avatar-image {
-    width: 300px;
-    height: 300px;
-  }
+    /* Smaller laptops and large screens */
+    .avatar-image {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
-  /* Larger laptops and monitors */
+    /* Larger laptops and monitors */
 
-  .avatar-image {
-    width: 350px;
-    height: 350px;
-  }
+    .avatar-image {
+        width: 350px;
+        height: 350px;
+    }
 }
 
 @media screen and (min-width: 1201px) {
-  /* Desktops and larger screens */
+    /* Desktops and larger screens */
 
-  .avatar-image {
-    width: 400px;
-    height: 400px;
-  }
+    .avatar-image {
+        width: 400px;
+        height: 400px;
+    }
 }
