@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 /* Navbar styles */
 .navbar {
@@ -17,6 +18,7 @@
 
 .nav-hover:hover {
     color: #dd3e6e;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar a {
@@ -30,6 +32,7 @@
 
 .navbar a:hover {
     color: #dd3e6e;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -37,7 +40,7 @@
     content: '';
     width: 0;
     height: 2px;
-    background: #dc6464;
+    background: #3edede;
     position: absolute;
     bottom: -4px;
     left: -5px;

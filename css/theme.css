@@ -2,12 +2,12 @@
 .light-theme {
     background: linear-gradient(to bottom, #fdfdfd, #fbf1f1);
     color: #111014;
-    transition: background-color 0.5s ease-in, color 0.5s ease-out;
+    transition: background-color 0.75s ease-in, color 0.75s ease-out;
 }
 
 /* Dark theme */
 .dark-theme {
-    background: linear-gradient(45deg, #111014, #190a19);
+    background: linear-gradient(45deg, #111014, #100610);
     color: #fefefe;
     transition: background-color 0.5s ease, color 0.5 ease;
 }

@@ -62,13 +62,13 @@ footer {
 /* Styling for social icons */
 .social-icon {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 10px;
+  height: 10px;
   background-color: #fff;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
-  margin: 10px;
+  margin: 20px;
   transition: background-color 0.3s ease;
 }
 
@@ -79,9 +79,10 @@ footer {
 }
 
 .social-icon:hover {
-  background-color: #dd3e6e;
+  background-color: #8eb5e1;
 }
 
+s
 /* Responsive styles for different screen sizes */
 @media screen and (max-width: 320px) {
 
