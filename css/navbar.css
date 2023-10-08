@@ -12,7 +12,7 @@
 
 .nav-hover {
     cursor: pointer;
-    transition: color 0.5s ease;
+    transition: color 0.7s ease;
     font-weight: bolder !important;
 }
 
@@ -33,20 +33,20 @@
 .navbar a:hover {
     color: #dd3e6e;
     font-family: 'Poppins', sans-serif;
-
+    letter-spacing: 1px;
 }
 
 .navbar a::before {
     content: '';
     width: 0;
     height: 2px;
-    background: #3edede;
+    background: #dd336e;
     position: absolute;
     bottom: -4px;
-    left: -5px;
-    transition: width 0.5s ease-in-out;
+    left: -8px;
+    transition: width 0.7s ease-in-out;
 }
 
 .navbar a:hover::before {
-    width: 108%;
+    width: 110%;
 }
