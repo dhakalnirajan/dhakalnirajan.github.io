@@ -94,30 +94,36 @@
         
             /* Card Styles */
             .card {
+                background: linear-gradient(to right, #9f4040, #ae6924, #957909);
+                color: #ffffff;
+                animation: cardColorChange 10s infinite;
                 border: none;
-                background: #fff; /* Default background color for light theme */
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                border-radius: 8px;
-                transition: background-color 0.3s, color 0.3s;
+                border-radius: 15px;
             }
-        
+            
+            @keyframes cardColorChange {
+                0% {
+                    background-position: 0% 61%;
+                }
+                50% {
+                    background-position: 100% 40%;
+                }
+                100% {
+                    background-position: 0% 61%;
+                }
+            }
+            
             .card-header {
                 background-color: #007BFF;
                 color: #ffffff;
-                border-radius: 8px 8px 0 0;
+                border-radius: 20px 20px 0 0;
                 padding: 10px;
             }
-        
-            .card:hover {
-                background: linear-gradient(to right, #9f4040, #ae6924, #957909);
-                color: #ffffff;
-                animation: cardColorChange 4s infinite;
-            }
-        
+            
             .card-body {
                 padding: 20px;
             }
-        
+
             /* For dark theme */
             .dark-theme .card {
                 background: #333;
