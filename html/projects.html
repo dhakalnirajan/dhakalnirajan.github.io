@@ -65,6 +65,75 @@
         <link rel="stylesheet" href="./css/navbar.css">
         <link rel="stylesheet" href="./css/theme.css">
         <script src="./js/theme.js"></script>
+
+        <style>
+            /* Light Theme Styles */
+            .light-theme .portfolio-section {
+                background-color: #f7f7f7;
+                color: #333;
+            }
+        
+            /* Dark Theme Styles */
+            .dark-theme .portfolio-section {
+                background-color: #000000;
+                color: #FFFFFF;
+            }
+        
+            /* Text Color Adaptation */
+            .light-theme .text-color {
+                color: #111111;
+            }
+        
+            .dark-theme .text-color {
+                color: #FFFFFF;
+            }
+        
+            /* Card Styles */
+            .card {
+                border: none;
+                background: #fff; /* Default background color for light theme */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                transition: background-color 0.3s, color 0.3s;
+            }
+        
+            .card-header {
+                background-color: #007BFF;
+                color: #fff;
+                border-radius: 8px 8px 0 0;
+                padding: 10px;
+            }
+        
+            .card:hover {
+                background: linear-gradient(to right, #9f4040, #ae6924, #957909, #20914f, #246895);
+                color: #fff;
+                animation: cardColorChange 4s infinite;
+            }
+        
+            .card-body {
+                padding: 20px;
+            }
+        
+            /* For dark theme */
+            .dark-theme .card {
+                background: #333;
+            }
+        
+            .dark-theme .card:hover {
+                background: linear-gradient(to right, #555, #444, #333, #222, #111);
+                animation: cardColorChange 4s infinite;
+            }
+        
+            @keyframes cardColorChange {
+                0% {
+                    background-position: 0%;
+                }
+                100% {
+                    background-position: 100%;
+                }
+            }
+        </style>
+
     </head>
     <body class="light-theme"> <!-- Default is light theme -->
         <!-- Navigation Bar -->
@@ -125,12 +194,217 @@
                 </button>
             </div>
         </nav>
+
         <section class="py-10 bg-dark-theme text-light-theme portfolio-section">
             <div class="container mx-auto">
                 <div class="portfolio-content">
-                    <p></p>
+                    <h1 class="display-4 text-center mb-5 text-color">My
+                        Projects and Activities</h1>
+                    <!-- Project: Interactive Quiz Game -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            Interactive Quiz Game
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                We crafted an engaging Interactive Quiz Game,
+                                weaving together the magic of web technologies
+                                such as HTML, CSS, and JavaScript. This
+                                delightful creation serves as a portal to unlock
+                                a world of knowledge and fun for our users.
+                            </p>
+                            <p class="card-text">
+                                As creators, we took our brainchild to the
+                                spotlight, revealing it to the world at a
+                                Students Meetup Event. On that day, under the
+                                golden autumn sun, curious minds embraced the
+                                game and left with more knowledge than they
+                                arrived. We cherished every moment, for it was
+                                not just a project; it was an adventure in
+                                learning and sharing.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Project: Library Management System -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            Library Management System
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Behold, the Library Management System—a digital
+                                sanctuary for librarians and book lovers.
+                                Crafted with the power of HTML, CSS, JavaScript,
+                                and PHP, it's a symphony of order and
+                                convenience. For librarians, it's an instrument
+                                to orchestrate books, patrons, and records with
+                                ease.
+                            </p>
+                            <p class="card-text">
+                                While this project also made its appearance at
+                                the Students Meetup Event, its true purpose is
+                                to educate. It unravels the inner workings of
+                                library systems, leaving room for improvement
+                                and innovation. As we delve into its
+                                intricacies, the horizon of possibility expands
+                                further.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Project: Movie Recommendation Engine -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            Movie Recommendation Engine
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Imagine a world where movie night is never
+                                ordinary. Here, I present to you my Movie
+                                Recommendation Engine. It's a product of machine
+                                learning's artistry, carefully analyzing your
+                                cinematic preferences and the nuances of each
+                                film.
+                            </p>
+                            <p class="card-text">
+                                This project sprouted from my passion for data
+                                science and algorithms. It transforms the
+                                ordinary into extraordinary by suggesting films
+                                tailored just for you. It's an exploration in
+                                enhancing the film-watching experience, one
+                                recommendation at a time.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Project: Book Recommendation System -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            Book Recommendation System
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                In the world of books, there's a treasure trove
+                                of undiscovered gems. My Book Recommendation
+                                System is the guide, powered by machine learning
+                                and natural language processing. It dives deep
+                                into your reading history and book preferences
+                                to unveil your next literary adventure.
+                            </p>
+                            <p class="card-text">
+                                It's a journey into the realms of literature,
+                                designed to spark your curiosity. As your
+                                reading list grows, the world of books becomes a
+                                tapestry, waiting to be woven by the threads of
+                                knowledge and discovery.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Project: FoodFlow - Food Order Management System -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            FoodFlow - Food Order Management System
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                FoodFlow was born not just as a system, but as
+                                an exploration into the world of food delivery.
+                                Crafted using HTML, CSS, JavaScript, and PHP, it's
+                                a symphony for food enthusiasts. An opportunity
+                                to browse menus, place orders, and track
+                                deliveries with grace.
+                            </p>
+                            <p class="card-text">We were a team of three in our
+                                first year in college and we decided to go for
+                                designing such a system as a project because it
+                                is designed in the curriculum. It was designed
+                                when we were still learning Web Technologies and
+                                we were able to learn a lot from it due to all
+                                the struggles we went through in designing such
+                                a system.</p>
+                        </div>
+                    </div>
+                    <!-- Activity: Teaching and Workshops -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            Teaching and Workshops
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Teaching is not just my passion; it's a journey
+                                of transformation and enlightenment. In the
+                                captivating realm of Machine Learning, Python,
+                                Astronomy, and C programming, I've worn the hat
+                                of an educator and conductor, orchestrating
+                                countless symphonies of learning.
+                            </p>
+
+                            <p class="card-text">
+                                I've shared my knowledge with eager minds in
+                                various capacities. One memorable chapter was my
+                                role as an instructor in a Python workshop,
+                                hosted by a dynamic student organization where I
+                                am actively involved. The workshop was a gateway
+                                for aspiring programmers, a place where the
+                                language of Python unfolded its beauty.
+                            </p>
+
+                            <p class="card-text">
+                                But my journey didn't stop there. The following
+                                week, we embarked on a voyage into the realm of
+                                Machine Learning. The wheels of learning were
+                                set in motion as I took the stage as an
+                                instructor in the Machine Learning Bootcamp
+                                organized by the same student organization. It
+                                was a week of exploration, discovery, and diving
+                                into the depths of artificial intelligence.
+                            </p>
+
+                            <p class="card-text">
+                                But I don't confine my teaching to specific
+                                events or schedules. Whenever I find a window of
+                                opportunity, whether it's through online
+                                workshops or physical bootcamps, I seize it to
+                                teach and share my expertise. The subjects I've
+                                imparted knowledge in include Python, C
+                                programming, and Web Technologies.
+                            </p>
+
+                            <p class="card-text">
+                                Each session is more than just a class; it's a
+                                mosaic of shared knowledge, a spark of
+                                inspiration, and a journey toward empowerment. I'm
+                                passionate about sharing knowledge, igniting
+                                curiosity, and nurturing the budding innovators
+                                of tomorrow.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
+        <!-- Footer Section -->
+        <footer class="py-4 bg-dark-theme">
+            <div class="container mx-auto">
+                <p style="color: #fefefe;">&copy; 2022 - 2023 Nirajan Dhakal.
+                    All Rights
+                    Reserved. &nbsp; Powered By &nbsp; <i class="fab fa-github"
+                        aria-hidden="true"></i> &nbsp;</p>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/lib/index.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+            integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/regular.min.js"
+            integrity="sha512-kSAGSlODsZwG7bMv/Hydyvybjk+WOz4oEqQiWYwpCxQ7/7yXMFynr2QrvNc2myZW/7wyi0IF2TXZZWMeg8AGhw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/regular.min.js"
+            integrity="sha512-kSAGSlODsZwG7bMv/Hydyvybjk+WOz4oEqQiWYwpCxQ7/7yXMFynr2QrvNc2myZW/7wyi0IF2TXZZWMeg8AGhw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
 </html>
