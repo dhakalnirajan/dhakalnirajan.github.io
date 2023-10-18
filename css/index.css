@@ -45,7 +45,14 @@ body {
 
 .portfolio-section {
     padding: 50px 0;
+    flex: 1;
 }
+
+.footer {
+    flex-shrink: 0;
+    /* Prevent the footer from shrinking */
+}
+
 
 .portfolio-content {
     max-width: 800px;
