@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+
+
 .wrapper {
     min-height: 100%;
     display: flex;
@@ -49,6 +52,7 @@
     margin: 10px 0;
     line-height: 1.4;
 }
+
 
 .message {
     font-size: 2rem;

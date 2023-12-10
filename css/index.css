@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+
+
 /* Common styles */
 body {
     font-family: 'Poppins', sans-serif;
@@ -50,7 +53,6 @@ body {
 
 .footer {
     flex-shrink: 0;
-    /* Prevent the footer from shrinking */
 }
 
 

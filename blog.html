@@ -163,5 +163,24 @@
                 </div>
             </section>
         </div>
+
+        <!-- Footer Section -->
+        <footer class="py-4 bg-dark-theme bottom-0">
+            <div class="container mx-auto">
+                <p style="color: #fefefe; font-family: 'Poppins', sans-serif;">&copy;
+                    2022 - <span id="current-year"></span>
+                    by Nirajan Dhakal. &nbsp; | &nbsp; All Rights Reserved.
+                    &nbsp; |
+                    &nbsp; Powered By &nbsp; <i class="fab fa-github"
+                        aria-hidden="true"></i>
+                    &nbsp;
+                </p>
+            </div>
+
+            <script>
+                // JavaScript to dynamically set the current year
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            </script>
+        </footer>
     </body>
 </html>

@@ -72,7 +72,9 @@
 
     </head>
     <body class="light-theme"> <!-- Default is light theme -->
+
         <!-- Navigation Bar -->
+
         <nav class="bg-black bg-dark-theme p-4 navbar">
             <div class="container mx-auto flex justify-between items-center">
                 <a
@@ -132,6 +134,8 @@
                 </button>
             </div>
         </nav>
+
+        <!-- Main Content -->
 
         <section class="py-10 bg-dark-theme text-light-theme portfolio-section">
             <div class="container mx-auto">
@@ -321,14 +325,23 @@
                 </div>
             </div>
         </section>
+
         <!-- Footer Section -->
-        <footer class="py-4 bg-dark-theme">
+        <footer class="py-4 bg-dark-theme bottom-0">
             <div class="container mx-auto">
-                <p style="color: #fefefe;">&copy; 2022 - 2023 Nirajan Dhakal.
-                    All Rights
-                    Reserved. &nbsp; Powered By &nbsp; <i class="fab fa-github"
-                        aria-hidden="true"></i> &nbsp;</p>
+                <p style="color: #fefefe;">&copy; 2022 - <span id="current-year"></span>
+                    by Nirajan Dhakal. &nbsp; | &nbsp; All Rights Reserved.
+                    &nbsp; |
+                    &nbsp; Powered By &nbsp; <i class="fab fa-github"
+                        aria-hidden="true"></i>
+                    &nbsp;
+                </p>
             </div>
+
+            <script>
+                // JavaScript to dynamically set the current year
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            </script>
         </footer>
 
         <script
