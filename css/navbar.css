@@ -6,13 +6,14 @@
     background-color: #100f13;
     color: #fefefe;
     padding: 20px 0;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .nav-hover {
     cursor: pointer;
     transition: color 0.7s ease;
     font-weight: bolder !important;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .nav-hover:hover {
@@ -27,10 +28,11 @@
     transition: color 0.7s ease-in-out;
     position: relative;
     font-weight: 700 !important;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .navbar a:hover {
-    color: #dd3e6e;
+    color: #b81143;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
 }
@@ -47,7 +49,7 @@
 }
 
 .navbar a:hover::before {
-    width: 110%;
+    width: 111%;
 }
 
 /* Material Icon Styling*/
