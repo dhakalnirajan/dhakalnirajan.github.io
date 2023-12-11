@@ -19,6 +19,7 @@ body {
     width: 160px;
     height: 160px;
     object-fit: cover;
+    box-shadow: -10px 20px 10px rgba(0, 0, 0, 0.2), 10px -20px 10px rgba(0, 0, 0, 0.2);
 }
 
 .img-fluid {
@@ -71,13 +72,14 @@ footer {
 /* Styling for social icons */
 .social-icon {
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    border-radius: 75%;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
     text-align: center;
-    line-height: 10px;
+    line-height: 20px;
     margin: 10px;
     transition: background-color 0.75s ease;
+    text-overflow: ellipsis;
 }
 
 .social-icon img {
@@ -87,9 +89,13 @@ footer {
 }
 
 .social-icon:hover {
-    background-color: #4f718d;
+    background-color: #e2e4e6;
 }
 
+.social-icon img[src*="instagram-logo.png"] {
+    width: 30px;
+    height: 30px;
+}
 
 /* Responsive styles for different screen sizes */
 @media screen and (max-width: 320px) {
