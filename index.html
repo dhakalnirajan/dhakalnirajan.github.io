@@ -148,6 +148,27 @@
                 Citizen Astronomer</p>
             </div>
 
+            <!-- Add GitHub Unwrapped 2023 Video Here -->
+
+            <!-- Video Container with Quality Control -->
+            <div class="video-container">
+              <video id="portfolioVideo" controls
+                poster="./img/github-unwrapped-poster.png">
+                <!-- Update the video source path and type -->
+                <source src="./video/unwrapped-dhakalnirajan.mp4"
+                  type="video/mp4">
+                <!-- Add additional source tags for different video formats if needed -->
+                Your browser does not support the video tag.
+              </video>
+
+              <!-- Quality Control Buttons -->
+              <div class="quality-control">
+                <button onclick="setQuality('low')">Low</button>
+                <button onclick="setQuality('medium')">Medium</button>
+                <button onclick="setQuality('high')">High</button>
+              </div>
+            </div>
+
             <br> <br>
             <div class="portfolio-logo">
               <a
@@ -233,5 +254,26 @@
       integrity="sha512-kSAGSlODsZwG7bMv/Hydyvybjk+WOz4oEqQiWYwpCxQ7/7yXMFynr2QrvNc2myZW/7wyi0IF2TXZZWMeg8AGhw=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script>
+      const video = document.getElementById('portfolioVideo');
+
+      function setQuality(quality) {
+          const sources = video.querySelectorAll('source');
+          sources.forEach(source => {
+              // Update the video source path based on quality
+              source.src = `./video/unwrapped-dhakalnirajan-${quality}.mp4`;
+          });
+
+          // Reload the video to apply changes
+          video.load();
+      }
+
+      window.addEventListener('resize', function() {
+          // Add your existing code for handling video container resize
+      });
+
+      // Trigger the resize event once on page load
+      window.dispatchEvent(new Event('resize'));
+      </script>
   </body>
 </html>
