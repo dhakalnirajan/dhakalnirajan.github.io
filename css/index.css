@@ -132,36 +132,6 @@ video {
     }
 }
 
-.video-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-video {
-    width: 100%;
-    height: auto;
-}
-
-/* Quality Control Styles */
-.quality-control {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-
-.quality-control>button {
-    margin-right: 5px;
-    cursor: pointer;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    outline: none;
-}
-
 @media screen and (min-width: 321px) and (max-width: 414px) {
 
     /* iPhone landscape, MI, Samsung, etc. */
