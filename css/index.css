@@ -132,6 +132,51 @@ video {
     }
 }
 
+/* Hamburger navbar CSS and Media Queries */
+
+/* Animation for the hamburger menu icon */
+#hamburger-icon {
+    cursor: pointer;
+    display: none;
+    /* Initially hide the hamburger icon */
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+    color: #fefefe;
+}
+
+/* Rotate and cross the bars to create an "X" icon when the menu is open */
+#hamburger-icon.show-menu .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#hamburger-icon.show-menu .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger-icon.show-menu .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+@media screen and (max-width: 800px) {
+
+    /* Hide the regular menu items */
+    .nav-address {
+        display: none;
+    }
+
+    /* Show the hamburger menu icon */
+    #hamburger-icon {
+        display: block;
+    }
+}
+
 @media screen and (min-width: 321px) and (max-width: 414px) {
 
     /* iPhone landscape, MI, Samsung, etc. */

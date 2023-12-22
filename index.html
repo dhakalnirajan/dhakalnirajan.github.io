@@ -16,7 +16,8 @@
     <meta property="og:description"
       content="Nirajan Dhakal personal website" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://dhakalnirajan.github.io/index.html" />
+    <meta property="og:url"
+      content="https://dhakalnirajan.github.io/index.html" />
     <link rel="canonical" href="https://dhakalnirajan.github.io/index.html" />
     <base href="https://dhakalnirajan.github.io/index.html" />
     <title>Nirajan Dhakal</title>
@@ -62,6 +63,10 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/theme.css">
+
+    <!-- Include the XML file -->
+    <link rel="metadata" type="application/xml" href="./xml/metadata.xml">
+
     <script src="./js/theme.js"></script>
   </head>
   <body class="light-theme"> <!-- Default is light theme -->
@@ -71,13 +76,10 @@
       <div class="container mx-auto flex justify-between items-center">
         <a
           class="text-light-theme fs-1 text-5xl nav-hover ml-4 animate__animated animate__lightSpeedInLeft"
-          href="index.html">
-          NIRAJAN DHAKAL
-        </a>
+          href="index.html">NIRAJAN DHAKAL</a>
         <div
           class="space-x-4 ml-4 text-uppercase nav-address animate__animated animate__lightSpeedInRight">
-          <a
-            class="relative group inline-block text-light-theme nav-hover"
+          <a class="relative group inline-block text-light-theme nav-hover"
             href="./about.html">
             <i class="fas fa-user"></i> &nbsp;
             <!-- Icon for About -->
@@ -85,8 +87,7 @@
             <span
               class="absolute left-0 w-full h-1 bottom-0 bg-light-theme transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
           </a>
-          <a
-            class="relative group inline-block text-light-theme nav-hover"
+          <a class="relative group inline-block text-light-theme nav-hover"
             href="./publications.html">
             <i class="fas fa-book"></i> &nbsp;
             <!-- Icon for Publications -->
@@ -94,26 +95,25 @@
             <span
               class="absolute left-0 w-full h-1 bottom-0 bg-light-theme transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
           </a>
-          <a
-            class="relative group inline-block text-light-theme nav-hover"
+          <a class="relative group inline-block text-light-theme nav-hover"
             href="./projects.html">
-            <i class="fas fa-diagram-project"></i> &nbsp;<!-- Icon for Projects -->
+            <i class="fas fa-diagram-project"></i>
+            &nbsp;<!-- Icon for Projects -->
             <span>Projects</span>
             <span
               class="absolute left-0 w-full h-1 bottom-0 bg-light-theme transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
           </a>
-          <a
-            class="relative group inline-block text-light-theme nav-hover"
+          <a class="relative group inline-block text-light-theme nav-hover"
             href="./blog.html">
             <i class="fas fa-rss"></i> &nbsp;<!-- Icon for Blog -->
             <span>Blog</span>
             <span
               class="absolute left-0 w-full h-1 bottom-0 bg-light-theme transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
           </a>
-          <a
-            class="relative group inline-block text-light-theme nav-hover"
+          <a class="relative group inline-block text-light-theme nav-hover"
             href="./contact.html">
-            <i class="fa-sharp far fa-envelope"></i> &nbsp;<!-- Icon for Contact -->
+            <i class="fa-sharp far fa-envelope"></i>
+            &nbsp;<!-- Icon for Contact -->
             <span>Contact</span>
             <span
               class="absolute left-0 w-full h-1 bottom-0 bg-light-theme transform scale-x-0 group-hover:scale-x-100 transition-transform"></span>
@@ -124,6 +124,12 @@
           aria-label="Toggle Light/Dark Theme">
           <i class="fas fa-adjust"></i>
         </button>
+        <!-- Hamburger menu icon -->
+        <div id="hamburger-icon" class="custom-button" style="color: #fefefe;">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
       </div>
     </nav>
 
@@ -201,7 +207,8 @@
       <div class="container mx-auto">
         <p style="color: #fefefe;">&copy; 2021 - <span id="current-year"></span>
           by Nirajan Dhakal. &nbsp; | &nbsp; All Rights Reserved. &nbsp; |
-          &nbsp; Powered By &nbsp; <i class="fab fa-github" aria-hidden="true"></i>
+          &nbsp; Powered By &nbsp; <i class="fab fa-github"
+            aria-hidden="true"></i>
           &nbsp;
         </p>
       </div>
@@ -253,6 +260,8 @@
 
       // Trigger the resize event once on page load
       window.dispatchEvent(new Event('resize'));
-      </script>
+    </script>
+
+    <script src="./js/theme.js"></script>
   </body>
 </html>
