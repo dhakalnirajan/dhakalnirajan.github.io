@@ -1,0 +1,55 @@
+title: Nirajan Dhakal | Personal Website
+author: Nirajan Dhakal
+description: Personal website of Nirajan Dhakal
+url: https://dhakalnirajan.github.io
+
+navbar-links:
+  About Me: "/about"
+  Publications: "/publications"
+  Projects: "/projects"
+  Blog: "/blog"
+  Contact: "/contact"
+
+social-network-links:
+  github: dhakalnirajan
+  twitter: nirajandhakal_7
+  linkedin: nirajandhakal07
+  email: nirajandhakal71@gmail.com
+  rss: true
+  facebook: Nirajan.Dhakal.007
+
+share-links-active:
+  facebook: true
+  twitter: true
+  linkedin: true
+  email: true
+  github: true
+
+feed_show_excerpt: true
+
+title_on_all_pages: true
+
+timezone: Asia/Kathmandu
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: "highlight"
+    span:
+      line_numbers: true
+      line_number_start: 1
+    block:
+      line_numbers: true
+      line_number_start: 1
+      start_inline: true
+      tab_replace: "  "
+  defaults:
+    - scope:
+        path: ""
+        type: "posts"
+      values:
+        layout: "post"
+        comments: true
+        social-share: true

@@ -1,17 +1,42 @@
-// Fetch the XML file
-fetch ('metadata.xml')
-  .then (response => response.text ())
-  .then (xmlString => {
+// Create a new XMLHttpRequest object
+const xhr = new XMLHttpRequest ();
+
+// Define the URL of the XML file
+const url = '../metadata.xml';
+
+// Configure the request
+xhr.open ('GET', url, true);
+
+// Define the onload function to handle the response
+xhr.onload = function () {
+  // Check if the request was successful
+  if (xhr.status >= 200 && xhr.status < 300) {
+    // Parse the XML response
     const parser = new DOMParser ();
-    const xmlDoc = parser.parseFromString (xmlString, 'application/xml');
+    const xmlDoc = parser.parseFromString (xhr.responseText, 'application/xml');
 
     // Access elements in the XML document
-    const author = xmlDoc.querySelector ('author').textContent;
-    const description = xmlDoc.querySelector ('description').textContent;
+    const authorElement = xmlDoc.querySelector ('author');
+    const descriptionElement = xmlDoc.querySelector ('description');
+
+    // Check if the elements exist before accessing their text content
+    const author = authorElement ? authorElement.textContent.trim () : '';
+    const description = descriptionElement
+      ? descriptionElement.textContent.trim ()
+      : '';
 
     console.log ('Author:', author);
     console.log ('Description:', description);
-  })
-  .catch (error => {
-    console.error ('Error fetching or parsing XML:', error);
-  });
+  } else {
+    // Log an error message if the request fails
+    console.error ('Error fetching XML:', xhr.statusText);
+  }
+};
+
+// Define the onerror function to handle errors
+xhr.onerror = function () {
+  console.error ('Request failed');
+};
+
+// Send the request
+xhr.send ();
