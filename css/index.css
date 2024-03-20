@@ -65,41 +65,44 @@ body {
 
 /* Center align footer text */
 footer {
+    display: flex;
     text-align: center;
     background-color: #100f13;
+    align-content: center;
+    font-size: 33px;
+    height: 300px;
+    color: #fefefe
+}
+
+.further-content {
+    margin-top: 50px;
+    display: flex;
+    align-content: start;
 }
 
 /* Styling for social icons */
 .social-icon {
     display: inline-block;
-    width: 60px !important;
-    height: 60px !important;
+    width: 70px;
+    height: 60px;
     border-radius: 100%;
     align-items: center;
     line-height: 20px;
-    margin: 10px;
-    transition: background-color 0.75s ease;
+    margin: 10px 20px 30px 20px;
+    transition: background-color 0.75s cubic-bezier(.66, .34, .61, 1.12);
     text-overflow: ellipsis;
+    align-items: center;
 }
 
 .social-icon img {
-    width: 60px !important;
-    height: 60px !important;
+    width: 50px;
+    height: 45px;
     vertical-align: middle;
+    margin-top: 6px;
 }
 
 .social-icon:hover {
-    background-color: #e2e4e6;
-}
-
-.video-container {
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 aspect ratio */
-    margin-top: 20px;
+    background-color: #b1dbe8;
 }
 
 
