@@ -3,14 +3,10 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Language" content="en" />
-
     <meta name="author" content="Nirajan Dhakal" />
     <meta name="description" content="Nirajan Dhakal Personal Website." />
-
-    <meta
-      name="keywords"
+    <meta name="keywords"
       content="artificial intelligence, blog, machine learning, deep learning, reinforcement learning, Artificial Intelligence, Machine Learning, Quantum Computing, Citizen Astronomer,quantum computing, citizen astronomer" />
-
     <meta property="og:title" content="Nirajan Dhakal" />
     <meta property="og:image" content="./img/favicon.png">
     <meta property="og:description"
@@ -18,10 +14,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:url"
       content="https://dhakalnirajan.github.io/index.html" />
-    <link rel="canonical" href="https://dhakalnirajan.github.io/index.html" />
+    <link rel="canonical"
+      href="https://dhakalnirajan.github.io/index.html" />
     <base href="https://dhakalnirajan.github.io/index.html" />
     <title>Nirajan Dhakal</title>
-
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 
@@ -36,42 +32,26 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Include Font Awesome for icons -->
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
-      integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/regular.min.css"
-      integrity="sha512-rOTVxSYNb4+/vo9pLIcNAv9yQVpC8DNcFDWPoc+gTv9SLu5H8W0Dn7QA4ffLHKA0wysdo6C5iqc+2LEO1miAow=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous">
-
     <!-- Include Tailwind CSS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/lib/index.min.js"></script>
     <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/tailwind.min.css">
-
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Include Google Fonts for custom fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@400&display=swap"
       rel="stylesheet">
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link
-      rel="stylesheet"
+    <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/navbar.css">
@@ -82,8 +62,6 @@
 
     <!-- Include XML Processor -->
     <script src="./js/xml_processing.js"></script>
-
-    <script src="./js/theme.js"></script>
   </head>
   <body class="light-theme"> <!-- Default is light theme -->
 
@@ -224,16 +202,32 @@
         <p style="color: #fefefe;">&copy; 2021 - <span id="current-year"></span>
           by Nirajan Dhakal. &nbsp; | &nbsp; All Rights Reserved. &nbsp; |
           &nbsp; Powered By &nbsp; <i class="fab fa-github"
-            aria-hidden="true"></i>
-          &nbsp;
-        </p>
+            aria-hidden="true"></i> &nbsp;</p>
       </div>
-
       <script>
-          // JavaScript to dynamically set the current year
-          document.getElementById('current-year').textContent = new Date().getFullYear();
+        // JavaScript to dynamically set the current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+        // Theme toggle functionality
+        const toggleThemeBtn = document.getElementById('toggle-theme');
+        const body = document.body;
+    
+        toggleThemeBtn.addEventListener('click', function() {
+          body.classList.toggle('dark-theme');
+          // Save the user's preference to local storage
+          const isDarkTheme = body.classList.contains('dark-theme');
+          localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+        });
+    
+        // Check user's preference from local storage and set the theme accordingly
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+          body.classList.add('dark-theme');
+        }
       </script>
     </footer>
+
+    <script src="./js/theme.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
@@ -255,28 +249,6 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/regular.min.js"
       integrity="sha512-kSAGSlODsZwG7bMv/Hydyvybjk+WOz4oEqQiWYwpCxQ7/7yXMFynr2QrvNc2myZW/7wyi0IF2TXZZWMeg8AGhw=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-      const video = document.getElementById('portfolioVideo');
-
-      function setQuality(quality) {
-          const sources = video.querySelectorAll('source');
-          sources.forEach(source => {
-              // Update the video source path based on quality
-              source.src = `./video/unwrapped-dhakalnirajan-${quality}.mp4`;
-          });
-
-          // Reload the video to apply changes
-          video.load();
-      }
-
-      window.addEventListener('resize', function() {
-          // Add your existing code for handling video container resize
-      });
-
-      // Trigger the resize event once on page load
-      window.dispatchEvent(new Event('resize'));
-    </script>
 
     <script src="./js/theme.js"></script>
   </body>
